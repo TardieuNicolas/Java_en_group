@@ -9,7 +9,7 @@ public class Form extends JPanel {
     JTextField tLast = new JTextField("");
     JTextField tAge = new JTextField("");
     JTextField tEntry = new JTextField("");
-    JTextField tJob = new JTextField("");
+    JComboBox tJob = new JComboBox();
     JTextField tSalary = new JTextField("");
 
     private JLabel labelFirst = new JLabel("Name: ");
@@ -56,9 +56,16 @@ public class Form extends JPanel {
 
         JPanel top5 = new JPanel();
         tJob.setPreferredSize(new Dimension(700,30));
+        tJob.addItem("Vendeur");
+        tJob.addItem("Representant");
+        tJob.addItem("Techinicien");
+        tJob.addItem("Manutentionnaire");
+        tJob.addItem("TechnARisque");
+        tJob.addItem("ManuARisque");
         top5.add(labelJob);
         top5.add(tJob);
         pan.add(top5, BorderLayout.NORTH);
+
 
         JPanel top6 = new JPanel();
         tSalary.setPreferredSize(new Dimension(700,30));
@@ -67,6 +74,7 @@ public class Form extends JPanel {
         pan.add(top6, BorderLayout.NORTH);
 
         //tableau
+
         Object[][] data = {
                 {"Malord", "8", "Fr"},
                 {"Max", "89", "Fr"},
@@ -96,9 +104,7 @@ public class Form extends JPanel {
                     data[0][0] = (tFirst.getText());
                     data[0][1] = (tLast.getText());
                     data[0][2] = (tAge.getText());
-                    data[0][3] = (tLast.getText());
-                    data[0][4] = (tLast.getText());
-                    data[0][5] = (tLast.getText());
+
                 }
         );
 

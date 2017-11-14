@@ -14,7 +14,7 @@ public class Dashboard extends JPanel {
         JPanel conteneur = new JPanel();
         conteneur.add(back);
         frame.setContentPane(conteneur);
-        Form.tFirst;
+       // Form.tFirst;
         JTable table = new JTable(new Object[][]{
                 {"", "Ex: Prenom", "Ex:Age", 3420,"Ex: Date d'embauche", "Ex:Job"},
                 {"Ex:Nom", "Ex: Prenom", "Ex:Age", 5234,"Ex: Date d'embauche", "Ex:Job"},
@@ -32,7 +32,7 @@ public class Dashboard extends JPanel {
         frame.getContentPane().add(moyLab, BorderLayout.EAST);
         frame.getContentPane().add(back, BorderLayout.SOUTH);
 
-//                frame.pack();
+        //frame.pack();
         frame.setVisible(true);
 
 
